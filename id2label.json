@@ -1,0 +1,15 @@
+{
+  "0": "add_expense",
+  "1": "add_income",
+  "2": "category_expense",
+  "3": "check_balance",
+  "4": "check_income",
+  "5": "check_total_expense",
+  "6": "goal_setting",
+  "7": "goodbye",
+  "8": "greeting",
+  "9": "investment_advice",
+  "10": "investment_recommendation_ml",
+  "11": "monthly_analysis",
+  "12": "risk_assessment"
+}
