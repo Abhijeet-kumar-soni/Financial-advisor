@@ -461,56 +461,62 @@ def page_about():
             </div>
             """, unsafe_allow_html=True)
 
-        # Architecture table — styled
-        st.markdown("""
-        <div style="font-family:'Space Mono',monospace; font-size:0.72rem; color:#5a8a68;
-                    text-transform:uppercase; letter-spacing:1.5px; margin:1.2rem 0 0.8rem 0">
-            Architecture
-        </div>
-        <div style="background:#1c2d21; border:1px solid #2d4a35; border-radius:10px;
-                    overflow:hidden; margin-bottom:1.2rem">
-            <table style="width:100%; border-collapse:collapse">
-                <thead>
-                    <tr style="background:#162318">
-                        <th style="padding:10px 14px; text-align:left; color:#3ddc84;
-                                   font-family:'Space Mono',monospace; font-size:0.72rem;
-                                   font-weight:700; letter-spacing:1px; text-transform:uppercase;
-                                   border-bottom:1px solid #2d4a35">Layer</th>
-                        <th style="padding:10px 14px; text-align:left; color:#3ddc84;
-                                   font-family:'Space Mono',monospace; font-size:0.72rem;
-                                   font-weight:700; letter-spacing:1px; text-transform:uppercase;
-                                   border-bottom:1px solid #2d4a35">Technology</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom:1px solid #2d4a35">
-                        <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">NLP Intent</td>
-                        <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">DistilBERT — 1,578 patterns / 13 classes</td>
-                    </tr>
-                    <tr style="border-bottom:1px solid #2d4a35">
-                        <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">Investment</td>
-                        <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">Rule-Based Expert System (7 rules + 2 safety gates)</td>
-                    </tr>
-                    <tr style="border-bottom:1px solid #2d4a35">
-                        <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">UI</td>
-                        <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">Streamlit</td>
-                    </tr>
-                    <tr>
-                        <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">Fallback</td>
-                        <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
-                                   font-family:'DM Sans',sans-serif">TF-IDF + Logistic Regression</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        """, unsafe_allow_html=True)
+# Architecture table — styled
+st.markdown("""
+<div style="font-family:'Space Mono',monospace; font-size:0.72rem; color:#5a8a68;
+            text-transform:uppercase; letter-spacing:1.5px; margin:1.2rem 0 0.8rem 0">
+    Architecture
+</div>
+<div style="background:#1c2d21; border:1px solid #2d4a35; border-radius:10px;
+            overflow:hidden; margin-bottom:1.2rem">
+    <table style="width:100%; border-collapse:collapse">
+        <thead>
+            <tr style="background:#162318">
+                <th style="padding:10px 14px; text-align:left; color:#3ddc84;
+                           font-family:'Space Mono',monospace; font-size:0.72rem;
+                           font-weight:700; letter-spacing:1px; text-transform:uppercase;
+                           border-bottom:1px solid #2d4a35">Layer</th>
+                <th style="padding:10px 14px; text-align:left; color:#3ddc84;
+                           font-family:'Space Mono',monospace; font-size:0.72rem;
+                           font-weight:700; letter-spacing:1px; text-transform:uppercase;
+                           border-bottom:1px solid #2d4a35">Technology</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom:1px solid #2d4a35">
+                <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">NLP Intent Detection</td>
+                <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">DistilBERT — 1,578 patterns / 13 classes</td>
+            </tr>
+            <tr style="border-bottom:1px solid #2d4a35">
+                <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Financial Processing Engine</td>
+                <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Rule-Based Logic (expenses, savings, goals)</td>
+            </tr>
+            <tr style="border-bottom:1px solid #2d4a35">
+                <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Investment Recommendation Engine</td>
+                <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Rule-Based Expert System (7 rules + 2 safety gates)</td>
+            </tr>
+            <tr style="border-bottom:1px solid #2d4a35">
+                <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">State Management</td>
+                <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Streamlit Session State</td>
+            </tr>
+            <tr>
+                <td style="padding:9px 14px; color:#9dbda8; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">User Interface</td>
+                <td style="padding:9px 14px; color:#e8f5ec; font-size:0.82rem;
+                           font-family:'DM Sans',sans-serif">Streamlit</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+""", unsafe_allow_html=True)
 
     with col2:
         st.markdown("""
